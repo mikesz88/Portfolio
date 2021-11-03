@@ -11,7 +11,10 @@ Template: http://drive.google.com/uc?export=view&id=PASTE YOU ID HERE
 
 [Profile Picture](http://drive.google.com/uc?export=view&id=1DAdwvQFv8A_k5zVpajFww3uxIJ0-muql)
 
+[Avatar Picture](https://images2.imgbox.com/b3/83/556M30XK_o.png)
+
 
 [Markdown Syntax and Best Practices](https://www.markdownguide.org/basic-syntax/)
 
 
+[youtube video for typing text](https://www.youtube.com/watch?v=T4VE_6v9hFs)

@@ -1,0 +1,105 @@
+/* Navbar */
+.navbar,
+.right-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.navbar {
+    z-index: 10;
+}
+
+.right-navbar {
+
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.right-navbar li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+}
+
+.right-navbar li:hover {
+    border-bottom: 3px solid var(--theme-color);
+}
+
+/* typing text */
+/* introduction Container */
+.introduction {
+    height: 35vh;
+}
+
+.introduction h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.typed-text {
+    font-weight: normal;
+    color: var(--theme-color);
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100% { background-color: #ccc;}
+}
+
+/* about container */
+.img-container {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.img-container img {
+    width: 100%;
+    margin-bottom: -0.45rem;
+}
+
+.about-subtext-container {
+    background-color: var(--theme-color);
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+.about-subtext-container p {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container .btn-alt {
+    background-color: #fff;
+    color: var(--theme-color);
+
+}
+
+/* Portfolio */
