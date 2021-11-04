@@ -1,3 +1,4 @@
+// Variables
 const typedTextSpan = document.querySelector('.typed-text');
 const cursorSpan = document.querySelector('.cursor');
 const textArray = [
@@ -11,6 +12,87 @@ const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
 
+// Portfolio Card Object
+const portfolioItems = [
+    {
+        title: 'MyTube HTML Only',
+        tech: 'i-tags',
+        img: 'https://picsum.photos/id/0/300/300',
+        popUpDescription: '',
+        gitHub: '',
+        liveLink: '',
+        dataItem: ''
+    },
+    {
+        title: 'MyTube with CSS',
+        tech: 'i-tags',
+        img: 'https://picsum.photos/id/0/300/300',
+        popUpDescription: '',
+        gitHub: '',
+        liveLink: '',
+        dataItem: ''
+    },
+    {
+        title: 'Responsive Website',
+        tech: 'i-tags',
+        img: 'https://picsum.photos/id/0/300/300',
+        popUpDescription: '',
+        gitHub: '',
+        liveLink: '',
+        dataItem: ''
+    },
+    {
+        title: 'Node Calculator',
+        tech: 'i-tags',
+        img: 'https://picsum.photos/id/0/300/300',
+        popUpDescription: '',
+        gitHub: '',
+        liveLink: '',
+        dataItem: ''
+    },
+    {
+        title: 'Node Battleship',
+        tech: 'i-tags',
+        img: 'https://picsum.photos/id/0/300/300',
+        popUpDescription: '',
+        gitHub: '',
+        liveLink: '',
+        dataItem: ''
+    },
+    {
+        title: 'JS Website with API',
+        tech: 'i-tags',
+        img: 'https://picsum.photos/id/0/300/300',
+        popUpDescription: '',
+        gitHub: '',
+        liveLink: '',
+        dataItem: ''
+    },
+    {
+        title: 'Portfolio',
+        tech: 'i-tags',
+        img: 'https://picsum.photos/id/0/300/300',
+        popUpDescription: '',
+        gitHub: '',
+        liveLink: '',
+        dataItem: ''
+    },
+];
+
+/* <div data-item="tech" data-open="project" class="project-card">
+<div class="img-container">
+    <img src="https://picsum.photos/id/0/300/300" alt="">
+</div>
+<h3>Project Title</h3>
+<div class="subtitle">Techs Used</div>
+<div class="button-container">
+    <a class="btn btn-primary btn-alt round-pill">Click to learn more!</a>
+</div>
+</div> */
+
+// Functions
+
+// Typing Function
 const type = () => {
     if (charIndex < textArray[textArrayIndex].length) {
         if (!cursorSpan.classList.contains('typing')) {
@@ -25,6 +107,7 @@ const type = () => {
     }
 }
 
+// Erase Typing
 const erase = () => {
     if (charIndex > 0) {
         if (!cursorSpan.classList.contains('typing')) {
@@ -43,6 +126,7 @@ const erase = () => {
     }
 }
 
+// Actions
 document.addEventListener('DOMContentLoaded', function() {
     if (textArray.length) {
         setTimeout(type, newTextDelay + 250);

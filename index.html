@@ -25,7 +25,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a class="btn btn-primary round-pill" href="#contact">Contact Me</a></li>
         </ul>
     </nav>
     <!-- introduction type text -->
@@ -46,13 +46,30 @@
     </div>
     <!-- Portfolio Features -->
     <section class="portfolio-container container">
-        <h2 class="header-md">Portfolio</h2>
+        <h2 class="header-md title">Portfolio</h2>
+        <div class="sub-header">Select the Tech to see the types of projects!</div>
         <div class="select-container">
-            <div class="sub-header">Select the Tech to see the types of projects!</div>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js-square"></i>
+            <div class="icon-text-container">
+                <i class="far fa-check-square"></i><div>All</div>
+            </div>
+            <div class="icon-text-container">
+                <i data-open="html" class="fab fa-html5"></i><div>HTML</div>
+            </div>
+            <div class="icon-text-container">
+                <i data-open="css" class="fab fa-css3-alt"></i><div>CSS</div>
+            </div>
+            <div class="icon-text-container">
+                <i data-open="js" class="fab fa-js-square"></i><div>JS</div>
+            </div>
+            <div class="icon-text-container">
+                <i data-open="node" class="fab fa-node"></i><div>Node</div>
+            </div>
         </div>
+
+        <!-- card elements added through JS -->
+        <div class="project-gallery-container"></div>
+        <!-- make the card function to add on load. -->
+        
     </section>
         
     <script src="js/main.js"></script>
