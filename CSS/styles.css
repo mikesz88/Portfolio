@@ -28,19 +28,29 @@
     border-bottom: 3px solid var(--theme-color);
 }
 
-/* typing text */
-/* introduction Container */
-.introduction {
-    height: 40vh;
+.introduction .intro-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
-.introduction h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
+.introduction .intro-flexbox {
     text-align: center;
-    overflow: hidden;
-    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+
+}
+
+
+.introduction .img-container {
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.introduction .img-container img {
+    width: 100%;
 }
 
 .typed-text {
@@ -68,38 +78,58 @@
     100% { background-color: #ccc;}
 }
 
-/* about container */
-.img-container {
-    width: 20%;
-    margin: 0 auto;
+.introduction .intro-button-container {
+    text-align: center;
+    margin: 3rem auto;
 }
 
-.img-container img {
-    width: 100%;
-    margin-bottom: -0.45rem;
+.intro-button-container a {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-
-.about-subtext-container {
+/* service container */
+.service-bg-container {
     background-color: var(--theme-color);
-    color: #fff;
+    color: var(--theme-color);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.about-subtext-container p {
-    max-width: 1130px;
-    margin: 0 auto;
-    padding: 2rem 15px;
+.service-bg-container h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.service-container .service-card-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
 }
 
-.button-container {
-    text-align: center;
+.service-card-container .service-card {
+    border: 1px solid transparent;
+    background: rgb(248, 249, 250);
+    border-radius: 8px;
+    width: 300px;
+    height: 350px;
+    padding: 1rem;
+    margin: 0.5rem;
 }
 
-.button-container .btn-alt {
-    background-color: #fff;
+.service-card i {
+    font-size: 3rem;
+}
+
+.service-card h3 {
     color: var(--theme-color);
+    font-size: 1.5rem;
+}
 
+.service-card p {
+    font-weight: 700;
 }
 
 /* Portfolio */
@@ -136,9 +166,10 @@
 
 /* project gallery container */
 .portfolio-container .project-gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 3rem;
 }
 
@@ -149,11 +180,11 @@
     width: 300px;
     padding: 1rem;
     margin: 1rem auto;
-}
-/* rgba(232, 234, 237, 1) */
-.project-gallery-container .project-card:hover {
-    box-shadow: 0 0 20px 5px rgba(7, 65, 173, 0.1);
-    cursor: pointer;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .project-card .img-container,
@@ -168,4 +199,73 @@
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.project-card .tech-container {
+    font-size: 3rem;
+    text-align: center;
+}
+.project-card .tech-container i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.tech-container .fa-html5 {
+    color: #e34c26;
+}
+
+.tech-container .fa-css3-alt {
+    color: #264de4;
+}
+
+.tech-container .fa-node {
+    color: #3c873a;
+}
+
+.tech-container .fa-js-square {
+    color: #f0db4f;
+}
+
+.project-card .btn-alt {
+    text-align: center;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    transition: 0.4s;
+    z-index: 1;
+    padding: 1.25rem 1.875rem;
+    opacity: 0;
+}
+
+.button-container::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background: var(--bg);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+    border-radius: 8px;
+}
+
+.project-gallery-container .project-card:hover {
+    cursor: pointer;
+}
+
+
+.project-gallery-container .project-card:hover .button-container {
+    box-shadow: 0 0 20px 5px rgba(7, 65, 173, 0.1);
+    cursor: pointer;
+    bottom: 20px;
+    opacity: 1;
 }
