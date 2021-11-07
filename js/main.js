@@ -1,4 +1,6 @@
 // Variables
+
+// Typing Variables
 const typedTextSpan = document.querySelector('.typed-text');
 const cursorSpan = document.querySelector('.cursor');
 const textArray = [
@@ -12,77 +14,95 @@ const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
 
+// Body Tag Variable
+const body = document.documentElement.querySelector('body');
+
+//modal open, close, item tags
+let modalOpen;
+let modalClose;
+let dataItem;
+
 // Portfolio Card Object
 const portfolioItems = [
     {
         title: 'MyTube HTML Only',
         tech: '<i class="fab fa-html5"></i>',
         img: 'https://picsum.photos/id/0/300/300',
-        popUpDescription: '',
-        gitHub: '',
-        liveLink: '',
-        dataItem: '',
-        dataOpen: ''
+        popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
+        gitHub: '#',
+        liveLink: '#',
+        dataItem: 'html',
+        dataOpen: 'mytubeHTML'
     },
     {
         title: 'MyTube with CSS',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i>',
         img: 'https://picsum.photos/id/0/300/300',
-        popUpDescription: '',
-        gitHub: '',
-        liveLink: '',
-        dataItem: '',
-        dataOpen: ''
+        popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
+        gitHub: '#',
+        liveLink: '#',
+        dataItem: 'html css',
+        dataOpen: 'mytubeCSS'
     },
     {
         title: 'Responsive Website',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i>',
         img: 'https://picsum.photos/id/0/300/300',
-        popUpDescription: '',
-        gitHub: '',
-        liveLink: '',
-        dataItem: '',
-        dataOpen: ''
+        popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
+        gitHub: '#',
+        liveLink: '#',
+        dataItem: 'html css',
+        dataOpen: 'responsiveWebsite'
+    },
+    {
+        title: 'SaaS Website',
+        tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i>',
+        img: 'https://picsum.photos/id/0/300/300',
+        popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
+        gitHub: '#',
+        liveLink: '#',
+        dataItem: 'html css',
+        dataOpen: 'saasWebsite'
     },
     {
         title: 'Node Calculator',
         tech: '<i class="fab fa-js-square"></i><i class="fab fa-node"></i>',
         img: 'https://picsum.photos/id/0/300/300',
-        popUpDescription: '',
-        gitHub: '',
-        liveLink: '',
-        dataItem: '',
-        dataOpen: ''
+        popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
+        gitHub: '#',
+        liveLink: '#',
+        dataItem: 'node js',
+        dataOpen: 'nodeCalc'
     },
     {
         title: 'Node Battleship',
         tech: '<i class="fab fa-js-square"></i><i class="fab fa-node"></i>',
         img: 'https://picsum.photos/id/0/300/300',
-        popUpDescription: '',
-        gitHub: '',
-        liveLink: '',
-        dataItem: '',
-        dataOpen: ''
+        popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
+        gitHub: '#',
+        liveLink: '#',
+        dataItem: 'node js',
+        dataOpen: 'nodeBattleship'
     },
     {
         title: 'JS Website with API',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i>',
         img: 'https://picsum.photos/id/0/300/300',
-        popUpDescription: '',
-        gitHub: '',
-        liveLink: '',
-        dataItem: '',
-        dataOpen: ''
+        popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
+        gitHub: '#',
+        liveLink: '#',
+        dataItem: 'html css js',
+        dataOpen: 'jsWebsite'
     },
     {
         title: 'Portfolio',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i>',
         img: 'https://picsum.photos/id/0/300/300',
-        popUpDescription: '',
-        gitHub: '',
-        liveLink: '',
-        dataItem: '',
-        dataOpen: ''
+        popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
+        gitHub: '#',
+        liveLink: '#',
+        dataItem: 'html css js',
+        dataOpen: 'portfolio'
     },
 ];
 
@@ -150,11 +170,95 @@ const erase = () => {
     }
 }
 
-// Actions
+// popUp Modal
+const popUpModal = (project) => {
+    body.innerHTML += `
+    <section id="${project.dataOpen}" class="popup-container" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <div class="modal-title header-sm">
+                <h3>${project.title}</h3>
+                <i data-close class="pop-modal-close fas fa-times"></i>
+            </div>
+            <div class="pop-modal-body">
+                <div class="img-container">
+                    <img src="${project.img}" alt="project image">
+                </div>
+                <div class="tech-icons">
+                    ${project.tech}
+                </div>
+                <div class="modal-text-container">
+                    ${project.popUpDescription}
+                </div>
+            </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary round-pill" href="${project.gitHub}">GitHub<i class="fab fa-github"></i></a>
+                    <a class="btn btn-primary round-pill" href="${project.liveLink}">Website<i class="fas fa-external-link-alt"></i></a>
+                </div>
+        </div>
+</section>
+    `;
+}
+
+const openModal = () => {
+    for (const ele of modalOpen) {
+        ele.addEventListener('click', function() {
+            const modalId = this.dataset.open;
+            const projectCard = portfolioItems.filter(project => project.dataOpen === modalId);
+            popUpModal(...projectCard);
+            setTimeout(function() {
+                document.getElementById(modalId).classList.add('is-visible');
+            },100)
+            closeModal();
+        })
+    }
+    
+}
+
+const closeModal = () => {
+    modalClose = document.querySelectorAll('[data-close]');
+    for (const ele of modalClose) {
+        ele.addEventListener('click', function() {
+            ele.parentElement.parentElement.parentElement.classList.remove('is-visible');
+            setTimeout(function () {
+                ele.parentElement.parentElement.parentElement.remove();
+            },400)
+        })
+    }
+}
+
+// Actions after functions
 document.addEventListener('DOMContentLoaded', function() {
     if (textArray.length) {
         setTimeout(type, newTextDelay + 250);
     }
 });
 
+// Create project cards
 projectCards();
+
+// Establish variables prior to function use
+modalOpen = document.querySelectorAll('[data-open]');
+dataItem = document.querySelectorAll('[data-item]');
+openModal();
+
+
+document.addEventListener('click', e => {
+    if (e.target === document.querySelector('.popup-container.is-visible')) {
+        const module = document.querySelector('.popup-container.is-visible');
+        module.classList.remove('is-visible');
+        setTimeout(function() {
+            module.remove();
+        },400);
+    }
+})
+
+document.addEventListener('keyup', e => {
+    if (e.key === 'Escape') {
+        const module = document.querySelector('.popup-container.is-visible');
+        module.classList.remove('is-visible');
+        setTimeout(function() {
+            module.remove();
+        },400);        
+    }
+})
+
