@@ -20,7 +20,14 @@ const body = document.documentElement.querySelector('body');
 //modal open, close, item tags
 let modalOpen;
 let modalClose;
+let dataSelector = document.querySelectorAll('[data-selector]');
+// filter portfolio projects
 let dataItem;
+// Portfolio Items
+const portfolioData = '[data-item]';
+
+// scroll variable
+const scrollToTop = document.querySelector('scroll-to-top-container');
 
 // Portfolio Card Object
 const portfolioItems = [
@@ -172,8 +179,11 @@ const erase = () => {
 
 // popUp Modal
 const popUpModal = (project) => {
-    body.innerHTML += `
-    <section id="${project.dataOpen}" class="popup-container" data-animation="slideInOutTop">
+    const section = document.createElement('section');
+    section.id = `${project.dataOpen}`;
+    section.classList.add('popup-container');
+    section.setAttribute('data-animation', 'slideInOutTop');
+    section.innerHTML = `
         <div class="modal-dialog">
             <div class="modal-title header-sm">
                 <h3>${project.title}</h3>
@@ -195,15 +205,17 @@ const popUpModal = (project) => {
                     <a class="btn btn-primary round-pill" href="${project.liveLink}">Website<i class="fas fa-external-link-alt"></i></a>
                 </div>
         </div>
-</section>
     `;
+    body.appendChild(section);
 }
 
+//open Modals
 const openModal = () => {
     for (const ele of modalOpen) {
         ele.addEventListener('click', function() {
             const modalId = this.dataset.open;
             const projectCard = portfolioItems.filter(project => project.dataOpen === modalId);
+            console.log(projectCard);
             popUpModal(...projectCard);
             setTimeout(function() {
                 document.getElementById(modalId).classList.add('is-visible');
@@ -214,6 +226,8 @@ const openModal = () => {
     
 }
 
+
+// close modals
 const closeModal = () => {
     modalClose = document.querySelectorAll('[data-close]');
     for (const ele of modalClose) {
@@ -224,6 +238,13 @@ const closeModal = () => {
             },400)
         })
     }
+}
+
+const setActive = (elm, selector) => {
+    if (document.querySelector(`${selector}.active`) !== null) {
+        document.querySelector(`${selector}.active`).classList.remove('active');
+    };
+    elm.classList.add('active');
 }
 
 // Actions after functions
@@ -239,6 +260,7 @@ projectCards();
 // Establish variables prior to function use
 modalOpen = document.querySelectorAll('[data-open]');
 dataItem = document.querySelectorAll('[data-item]');
+const portfolioItemsHTML = document.querySelectorAll(portfolioData);
 openModal();
 
 
@@ -250,7 +272,7 @@ document.addEventListener('click', e => {
             module.remove();
         },400);
     }
-})
+});
 
 document.addEventListener('keyup', e => {
     if (e.key === 'Escape') {
@@ -260,5 +282,21 @@ document.addEventListener('keyup', e => {
             module.remove();
         },400);        
     }
-})
+});
+
+for (const selector of dataSelector) {
+    selector.addEventListener('click', function() {
+        setActive(selector, '.icon-text-container');
+        const filter = this.dataset.selector;
+        portfolioItemsHTML.forEach(card => {
+            if (filter === 'all') {
+                card.style.display = 'block';
+            } else if (card.dataset.item.includes(filter)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        })
+    })
+}
 

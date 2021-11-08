@@ -18,3 +18,12 @@ Template: http://drive.google.com/uc?export=view&id=PASTE YOU ID HERE
 
 
 [youtube video for typing text](https://www.youtube.com/watch?v=T4VE_6v9hFs)
+
+
+Need to do:
+1. Finish Contact Me Section
+2. Update All projects with fake logos
+3. Input SaaS on gitHub
+4. Look into animations upon loading (Like SaaS)
+5. Update Portfolio Cards with actual data
+6. Consider dark theme?

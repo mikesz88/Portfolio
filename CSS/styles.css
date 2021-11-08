@@ -100,8 +100,14 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
+.intro-button-container > a {
+    margin: 1rem;
+}
+
 /* service container */
-.service-bg-container {
+.service-bg-container,
+.about-bg-container {
     background-color: var(--theme-color);
     color: var(--theme-color);
     padding-bottom: 2rem;
@@ -164,6 +170,10 @@
     width: 8rem;
 }
 
+.select-container .icon-text-container.active {
+    color: var(--theme-color);
+}
+
 .select-container .icon-text-container:hover {
     color: var(--theme-color);
     cursor: pointer;
@@ -218,24 +228,29 @@
     font-size: 3rem;
     text-align: center;
 }
-.project-card .tech-container i {
+.project-card .tech-container i,
+.photo-and-text-grid .tech-skills i {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
-.tech-container .fa-html5 {
+.tech-container .fa-html5,
+.tech-skills .fa-html5 {
     color: #e34c26;
 }
 
-.tech-container .fa-css3-alt {
+.tech-container .fa-css3-alt,
+.tech-skills .fa-css3-alt {
     color: #264de4;
 }
 
-.tech-container .fa-node {
+.tech-container .fa-node,
+.tech-skills .fa-node {
     color: #3c873a;
 }
 
-.tech-container .fa-js-square {
+.tech-container .fa-js-square,
+.tech-skills .fa-js-square {
     color: #f0db4f;
 }
 
@@ -381,3 +396,63 @@
 [data-animation="slideInOutTop"].is-visible .modal-dialog {
     transform: none;
 } 
+
+/* about section */
+/* bg color used from things i can do section */
+/* .about-bg-container {
+    height: 100vh;
+} */
+
+.about-bg-container h2 {
+    text-align: center;
+    color: #fff;
+    margin: 2rem;
+}
+
+.photo-and-text-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.photo-and-text-grid .img-container {
+    overflow: hidden;
+    margin: auto;
+}
+
+.photo-and-text-grid .img-container img {
+    object-fit: cover;
+    object-position: 60%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+
+.photo-and-text-grid .text-container .text {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.photo-and-text-grid .text-container .tech-skills {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* scroll to top */
+.scroll-to-top-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.scroll-to-top-container i {
+    font-size: 3rem;
+    color: #fff;
+}

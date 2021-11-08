@@ -15,17 +15,17 @@
     <script src="https://kit.fontawesome.com/1175a7f98e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="home"></div>
     <!-- navbar -->
     <div class="navbar-background-container">
-        <nav id="home" class="navbar container">
+        <nav class="navbar container">
             <div class="logo-container">
                 <img src="https://images2.imgbox.com/8e/86/8ZzoigtF_o.png" alt="logo">
             </div>
             <ul class="right-navbar ul-defaults-none">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#portfolio-menu">Portfolio</a></li>
                 <li><a class="btn btn-primary round-pill" href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="intro-button-container">
-            <a class="btn btn-primary round-pill" href="#contact">View My Work</a>
+            <a class="btn btn-primary round-pill" href="#portfolio-menu">View My Work</a>
             <a class="btn btn-primary round-pill" href="#about">More About Me</a>
         </div>
     </section>
@@ -72,32 +72,62 @@
         </div>
     </section>
     <!-- Portfolio Features -->
-    <section class="portfolio-container container">
+    <section id="portfolio-menu" class="portfolio-container container">
         <h2 class="header-md title">Portfolio</h2>
         <div class="sub-header">Select the Tech to see the types of projects!</div>
         <div class="select-container">
-            <div class="icon-text-container">
+            <div data-selector="all" class="icon-text-container active">
                 <i class="far fa-check-square"></i><div>All</div>
             </div>
-            <div class="icon-text-container">
-                <i data-open="html" class="fab fa-html5"></i><div>HTML</div>
+            <div data-selector="html" class="icon-text-container">
+                <i class="fab fa-html5"></i><div>HTML</div>
             </div>
-            <div class="icon-text-container">
-                <i data-open="css" class="fab fa-css3-alt"></i><div>CSS</div>
+            <div data-selector="css" class="icon-text-container">
+                <i class="fab fa-css3-alt"></i><div>CSS</div>
             </div>
-            <div class="icon-text-container">
-                <i data-open="js" class="fab fa-js-square"></i><div>JS</div>
+            <div data-selector="js" class="icon-text-container">
+                <i class="fab fa-js-square"></i><div>JS</div>
             </div>
-            <div class="icon-text-container">
-                <i data-open="node" class="fab fa-node"></i><div>Node</div>
+            <div data-selector="node" class="icon-text-container">
+                <i class="fab fa-node"></i><div>Node</div>
             </div>
         </div>
-
         <!-- card elements added through JS -->
         <div class="project-gallery-container"></div>
-        <!-- make the card function to add on load. -->
+    </section>
+
+    <section id="about" class="about-container">
+        <div class="about-bg-container">
+            <div class="container">
+                <h2 class="header-md">Who Am I?</h2>
+                <div class="photo-and-text-grid">
+                    <div class="img-container">
+                        <img src="http://drive.google.com/uc?export=view&id=1DAdwvQFv8A_k5zVpajFww3uxIJ0-muql" alt="">
+                    </div>
+                    <div class="text-container">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="tech-skills">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-node"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-me-container container">
+        <h2 class="header-md">Enough About Me! Let's Talk!</h2>
+        <div class="header-sm">Send me an email and I will reply within 24 hours!</div>
     </section>
         
+    <a class="scroll-to-top-container" href="#home">
+        <i class="fas fa-chevron-up"></i>
+    </a>
     <script src="js/main.js"></script>
 </body>
 </html>
