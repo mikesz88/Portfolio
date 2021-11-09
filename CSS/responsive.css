@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+    [aria-controls='navbarDropDown'] {
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ .right-navbar {
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ .right-navbar {
+        /* transition: all 0.5s; */
+        display: flex;
+        flex-wrap: wrap;
+        /* position: fixed;
+        top: 7rem    ;
+        left: 50%;
+        right: 0rem;
+        bottom: 0;
+        background: black; */
+    }
+}

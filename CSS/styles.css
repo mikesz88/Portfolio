@@ -1,9 +1,9 @@
 /* Navbar */
 .navbar-background-container {
-    position: fixed;
+    /* position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: 0; */
     background-color: #fff;
     z-index: 100;
 }
@@ -39,6 +39,10 @@
 
 .right-navbar ul #button :hover {
     border-bottom: none;
+}
+
+[aria-controls='navbarDropDown'] {
+    display: none;
 }
 
 /* Hero Section */
@@ -398,6 +402,14 @@
     transition-delay: 0.2s;
 }
 
+.navbar-toggler {
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: var(--theme-color);
+    order: 3;
+}
+
 [data-animation="slideInOutTop"] .modal-dialog {
     transform: translateY(-100%);
 }
@@ -457,6 +469,7 @@
     padding: 0.5rem;
     border-radius: 8px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .scroll-to-top-container i {

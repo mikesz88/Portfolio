@@ -26,6 +26,9 @@ let dataItem;
 // Portfolio Items
 const portfolioData = '[data-item]';
 
+// navToggler
+const navButton = document.querySelector('button[aria-expanded]');
+
 // scroll variable
 const scrollToTop = document.querySelector('scroll-to-top-container');
 
@@ -247,6 +250,12 @@ const setActive = (elm, selector) => {
     elm.classList.add('active');
 }
 
+// Toggle menu
+function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+}
+
 // Actions after functions
 document.addEventListener('DOMContentLoaded', function() {
     if (textArray.length) {
@@ -300,3 +309,4 @@ for (const selector of dataSelector) {
     })
 }
 
+navButton.addEventListener('click', toggleNav);
