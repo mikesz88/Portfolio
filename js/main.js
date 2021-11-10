@@ -204,7 +204,7 @@ const popUpModal = (project) => {
                 </div>
             </div>
                 <div class="modal-footer">
-                    <a class="btn btn-primary round-pill" href="${project.gitHub}"target="_blank">GitHub<i class="fab fa-github"></i></a>
+                    <a class="btn btn-primary round-pill" href="${project.gitHub}"target="_blank">Source Code<i class="fab fa-github"></i></a>
                     <a class="btn btn-primary round-pill" href="${project.liveLink}" target="_blank">Website<i class="fas fa-external-link-alt"></i></a>
                 </div>
         </div>
