@@ -6,7 +6,7 @@ const cursorSpan = document.querySelector('.cursor');
 const textArray = [
     'I help people and small businesses bring their vision into light.', 
     'I develop your ideas and make them a reality that is professional and cost-effective.',
-    'I build user friendly and interactive websites that brings customers back.'
+    'I build user friendly and interactive websites that bring customers back.'
 ];
 const typingDelay = 125;
 const erasingDelay = 50;
