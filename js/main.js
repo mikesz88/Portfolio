@@ -37,80 +37,80 @@ const portfolioItems = [
     {
         title: 'MyTube HTML Only',
         tech: '<i class="fab fa-html5"></i>',
-        img: 'https://picsum.photos/id/0/300/300',
+        img: 'https://images2.imgbox.com/6f/f4/pWKuZb48_o.png',
         popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
-        gitHub: '#',
-        liveLink: '#',
+        gitHub: 'https://github.com/mikesz88/myTubeHTMLOnly',
+        liveLink: 'https://mikesz88.github.io/myTubeHTMLOnly/',
         dataItem: 'html',
         dataOpen: 'mytubeHTML'
     },
     {
         title: 'MyTube with CSS',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i>',
-        img: 'https://picsum.photos/id/0/300/300',
+        img: 'https://images2.imgbox.com/82/ee/xUyxD1Dm_o.png',
         popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
-        gitHub: '#',
-        liveLink: '#',
+        gitHub: 'https://github.com/mikesz88/myTubeWithCSS',
+        liveLink: 'https://mikesz88.github.io/myTubeWithCSS/',
         dataItem: 'html css',
         dataOpen: 'mytubeCSS'
     },
     {
         title: 'Responsive Website',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i>',
-        img: 'https://picsum.photos/id/0/300/300',
+        img: 'https://images2.imgbox.com/7e/74/qaNhBDAZ_o.png',
         popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
-        gitHub: '#',
-        liveLink: '#',
+        gitHub: 'https://github.com/mikesz88/ResponsiveWebsite',
+        liveLink: 'https://mikesz88.github.io/ResponsiveWebsite/',
         dataItem: 'html css',
         dataOpen: 'responsiveWebsite'
     },
     {
         title: 'SaaS Website',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i>',
-        img: 'https://picsum.photos/id/0/300/300',
+        img: 'https://images2.imgbox.com/15/1c/jj4GpFqV_o.png',
         popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
-        gitHub: '#',
-        liveLink: '#',
+        gitHub: 'https://github.com/mikesz88/SaaS-Website',
+        liveLink: 'https://mikesz88.github.io/SaaS-Website/',
         dataItem: 'html css',
         dataOpen: 'saasWebsite'
     },
     {
         title: 'Node Calculator',
         tech: '<i class="fab fa-js-square"></i><i class="fab fa-node"></i>',
-        img: 'https://picsum.photos/id/0/300/300',
+        img: 'https://images2.imgbox.com/5b/6d/3CNO8hqD_o.png',
         popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
-        gitHub: '#',
-        liveLink: '#',
+        gitHub: 'https://github.com/mikesz88/NodeJsCalculator',
+        liveLink: 'https://github.com/mikesz88/NodeJsCalculator',
         dataItem: 'node js',
         dataOpen: 'nodeCalc'
     },
     {
         title: 'Node Battleship',
         tech: '<i class="fab fa-js-square"></i><i class="fab fa-node"></i>',
-        img: 'https://picsum.photos/id/0/300/300',
+        img: 'https://images2.imgbox.com/43/75/xCixU9FY_o.png',
         popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
-        gitHub: '#',
-        liveLink: '#',
+        gitHub: 'https://github.com/mikesz88/NodeJsBattleship',
+        liveLink: 'https://github.com/mikesz88/NodeJsBattleship',
         dataItem: 'node js',
         dataOpen: 'nodeBattleship'
     },
     {
         title: 'JS Website with API',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i>',
-        img: 'https://picsum.photos/id/0/300/300',
+        img: 'https://images2.imgbox.com/6b/b8/UBDlRAQD_o.png',
         popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
-        gitHub: '#',
-        liveLink: '#',
+        gitHub: 'https://github.com/mikesz88/JS-Website-with-API',
+        liveLink: 'https://mikesz88.github.io/JS-Website-with-API/',
         dataItem: 'html css js',
         dataOpen: 'jsWebsite'
     },
     {
         title: 'Portfolio',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i>',
-        img: 'https://picsum.photos/id/0/300/300',
+        img: 'https://images2.imgbox.com/14/bf/MJ5qzyhj_o.png',
         popUpDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nec feugiat in fermentum posuere. Vestibulum morbi blandit cursus risus at ultrices mi. Pulvinar pellentesque habitant morbi tristique senectus et netus. Odio morbi quis commodo odio aenean. Lacus vestibulum sed arcu non odio euismod. Eget nunc lobortis mattis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Viverra vitae congue eu consequat ac felis donec et. Elementum curabitur vitae nunc sed velit dignissim sodales ut. In vitae turpis massa sed elementum tempus egestas sed.',
-        gitHub: '#',
-        liveLink: '#',
+        gitHub: 'https://github.com/mikesz88/Portfolio',
+        liveLink: 'https://michaelsanchez.page',
         dataItem: 'html css js',
         dataOpen: 'portfolio'
     },
@@ -204,8 +204,8 @@ const popUpModal = (project) => {
                 </div>
             </div>
                 <div class="modal-footer">
-                    <a class="btn btn-primary round-pill" href="${project.gitHub}">GitHub<i class="fab fa-github"></i></a>
-                    <a class="btn btn-primary round-pill" href="${project.liveLink}">Website<i class="fas fa-external-link-alt"></i></a>
+                    <a class="btn btn-primary round-pill" href="${project.gitHub}"target="_blank">GitHub<i class="fab fa-github"></i></a>
+                    <a class="btn btn-primary round-pill" href="${project.liveLink}" target="_blank">Website<i class="fas fa-external-link-alt"></i></a>
                 </div>
         </div>
     `;

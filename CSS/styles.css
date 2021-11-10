@@ -137,7 +137,7 @@
     border: 1px solid transparent;
     background: rgb(248, 249, 250);
     border-radius: 8px;
-    width: 300px;
+    max-width: 300px;
     height: 350px;
     padding: 1rem;
     margin: 0.5rem;
@@ -219,6 +219,8 @@
 .project-card .img-container img {
     width: 100%;
     border-radius: 8px;
+    height: 150px;
+
 }
 
 .project-card h3,
@@ -352,8 +354,8 @@
 }
 
 .modal-dialog .pop-modal-body .img-container {
-    max-width: 300px;
-    margin: auto;
+    max-width: 75%;
+    margin: 1rem auto;
 }
 
 .modal-dialog .pop-modal-body .img-container img {

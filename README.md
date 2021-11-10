@@ -21,8 +21,9 @@ Template: http://drive.google.com/uc?export=view&id=PASTE YOU ID HERE
 
 
 Need to do:
-2. Update All projects with fake logos
-3. Input SaaS on gitHub
 4. Look into animations upon loading (Like SaaS)
 5. Update Portfolio Cards with actual data
 6. Consider dark theme?
+
+
+<a href="https://imgbox.com/xCixU9FY" target="_blank"><img src="https://images2.imgbox.com/43/75/xCixU9FY_o.png" alt="image host"/></a>
