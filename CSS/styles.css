@@ -48,7 +48,7 @@
 /* Hero Section */
 .introduction .intro-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-top: 6rem;
     margin-bottom: 2rem;
 }
@@ -363,6 +363,9 @@
 
 .modal-dialog .pop-modal-body .tech-icons {
     font-size: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .modal-dialog .pop-modal-body .tech-icons i {
@@ -430,7 +433,7 @@
 
 .photo-and-text-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
 }
 
@@ -442,8 +445,8 @@
 .photo-and-text-grid .img-container img {
     object-fit: cover;
     object-position: 60%;
-    height: 300px;
-    width: 300px;
+    height: 280px;
+    width: 280px;
     border-radius: 50%;
 }
 
@@ -522,6 +525,7 @@
 .footer-bg-container .container .flex-container .external-links,
 .footer-bg-container .container .flex-container .quick-links {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-evenly;
     align-items: center;

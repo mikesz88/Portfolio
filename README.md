@@ -21,7 +21,6 @@ Template: http://drive.google.com/uc?export=view&id=PASTE YOU ID HERE
 
 
 Need to do:
-1. Finish Contact Me Section
 2. Update All projects with fake logos
 3. Input SaaS on gitHub
 4. Look into animations upon loading (Like SaaS)
