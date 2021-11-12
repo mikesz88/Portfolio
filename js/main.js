@@ -108,7 +108,7 @@ const portfolioItems = [
         title: 'Portfolio',
         tech: '<i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js-square"></i>',
         img: 'https://images2.imgbox.com/14/bf/MJ5qzyhj_o.png',
-        popUpDescription: 'This project by far has been one of my bests. One reason is the challenge of creating a portfolio from scratch with no expectations and all the possibilities at my disposal. The challenge gave me an opportunity to showcase my skills as a developer and also challenge myself to find new ways to implement JavaScript into my website. For example, the typing portion in the introduction was a new technique I learned in my research that shows my skills of using JavaScript effectively. Click the links below to see the source code, a README file that shows more information, and a link back to the website!',
+        popUpDescription: 'This project by far has been one of my best. One reason is the challenge of creating a portfolio from scratch with no expectations and all the possibilities at my disposal. The challenge gave me an opportunity to showcase my skills as a developer and also challenge myself to find new ways to implement JavaScript into my website. For example, the typing portion in the introduction was a new technique I learned in my research that shows my skills of using JavaScript effectively. Click the links below to see the source code, a README file that shows more information, and a link back to the website!',
         gitHub: 'https://github.com/mikesz88/Portfolio',
         liveLink: 'https://michaelsanchez.page',
         dataItem: 'html css js',
