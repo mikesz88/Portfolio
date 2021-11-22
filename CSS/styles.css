@@ -265,6 +265,12 @@
     color: #f0db4f;
 }
 
+.tech-container .fa-react,
+.tech-skills .fa-react,
+.tech-icons .fa-react {
+    color: #61DBFB;
+}
+
 .project-card .btn-alt {
     text-align: center;
 }
