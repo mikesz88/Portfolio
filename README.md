@@ -18,12 +18,3 @@ Template: http://drive.google.com/uc?export=view&id=PASTE YOU ID HERE
 
 
 [youtube video for typing text](https://www.youtube.com/watch?v=T4VE_6v9hFs)
-
-
-Need to do:
-4. Look into animations upon loading (Like SaaS)
-5. Update Portfolio Cards with actual data
-6. Consider dark theme?
-
-
-<a href="https://imgbox.com/xCixU9FY" target="_blank"><img src="https://images2.imgbox.com/43/75/xCixU9FY_o.png" alt="image host"/></a>
