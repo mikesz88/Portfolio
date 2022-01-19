@@ -134,6 +134,16 @@ const portfolioItems = [
         dataItem: 'react',
         dataOpen: 'codeCommerce'
     },
+    {
+        title: 'House Essentials eCommerce',
+        tech: '<i class="fab fa-react"></i>',
+        img: './assets/houseEssentialsPic.PNG',
+        popUpDescription: '',
+        gitHub: 'https://github.com/mikesz88/house_essential_commerce_with_api',
+        liveLink: 'https://mikesz88.github.io/house_essential_commerce_with_api/',
+        dataItem: 'react',
+        dataOpen: 'houseEssentials'
+    },
 ];
 
 
