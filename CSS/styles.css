@@ -175,11 +175,22 @@
     width: 8rem;
 }
 
-.select-container .icon-text-container.active {
+.select-container .typescript-container img {
+    padding-top: 0.5rem;
+    width: 40px;
+}
+
+.select-container .typescript-container div {
+    font-size: 2rem;
+}
+
+.select-container .icon-text-container.active,
+.select-container .typescript-container.active {
     color: var(--theme-color);
 }
 
-.select-container .icon-text-container:hover {
+.select-container .icon-text-container:hover,
+.select-container .typescript-container:hover {
     color: var(--theme-color);
     cursor: pointer;
 }
@@ -235,6 +246,21 @@
     font-size: 3rem;
     text-align: center;
 }
+
+.typescript-logo {
+    margin: auto;
+    width: 50px;
+}
+
+.typescript-logo img {
+    max-width: 100%;
+}
+
+.tech-skills {
+    display: flex;
+    justify-content: center;
+}
+
 .project-card .tech-container i,
 .photo-and-text-grid .tech-skills i {
     margin-left: 1rem;
@@ -269,6 +295,10 @@
 .tech-skills .fa-react,
 .tech-icons .fa-react {
     color: #61DBFB;
+}
+
+.typescript-tech-skills {
+    width: 50px;
 }
 
 .project-card .btn-alt {
