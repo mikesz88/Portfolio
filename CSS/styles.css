@@ -172,7 +172,7 @@
 
 .select-container .icon-text-container {
     text-align: center;
-    width: 8rem;
+    width: 14rem;
 }
 
 .select-container .typescript-container img {
@@ -184,19 +184,17 @@
     font-size: 2rem;
 }
 
-.select-container .icon-text-container.active,
-.select-container .typescript-container.active {
+.select-container .icon-text-container.active {
+    border: 1px solid var(--theme-color);
     color: var(--theme-color);
+    border-radius: 8px;
 }
 
-.select-container .icon-text-container:hover,
-.select-container .typescript-container:hover {
-    color: var(--theme-color);
+.select-container .icon-text-container:hover {
+    background-color: var(--theme-color);
+    color: rgb(248, 249, 250);
     cursor: pointer;
-}
-
-.icon-text-container i {
-    font-size: 3rem;
+    border-radius: 8px;
 }
 
 .icon-text-container div {
@@ -243,17 +241,8 @@
 }
 
 .project-card .tech-container {
-    font-size: 3rem;
+    font-size: 1rem;
     text-align: center;
-}
-
-.typescript-logo {
-    margin: auto;
-    width: 50px;
-}
-
-.typescript-logo img {
-    max-width: 100%;
 }
 
 .tech-skills {
@@ -400,7 +389,7 @@
 }
 
 .modal-dialog .pop-modal-body .tech-icons {
-    font-size: 5rem;
+    font-size: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

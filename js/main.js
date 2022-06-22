@@ -32,10 +32,6 @@ const navButton = document.querySelector('button[aria-expanded]');
 // scroll variable
 const scrollToTop = document.querySelector('scroll-to-top-container');
 
-
-// portfolio items
-
-
 // Create Cards
 const projectCards = () => {
     const galleryDiv = document.querySelector('.project-gallery-container');
@@ -52,8 +48,8 @@ const projectCards = () => {
         <div class="subtitle">
         Techs Used:
         </div>
-        <div class=${project.tech ? 'tech-container' : 'typescript-logo'}>
-        ${project.tech ? project.tech : `<img src="../assets/Typescript_logo_2020.svg.png" alt="">`}
+        <div class='tech-container'>
+        ${project.tech}
         </div>
         <div class="button-container">
             <a class="btn btn-primary btn-alt round-pill">Click to learn more!</a>
@@ -123,7 +119,12 @@ const popUpModal = (project) => {
                 </div>
             </div>
                 <div class="modal-footer">
-                    <a class="btn btn-primary round-pill" href="${project.gitHub}" target="_blank">Source Code<i class="fab fa-github"></i></a>
+                    ${project.gitHubBackend ? `
+                    <a class="btn btn-primary round-pill" href="${project.gitHub}" target="_blank">Front-End Code<i class="fab fa-github"></i></a>
+                    <a class="btn btn-primary round-pill" href="${project.gitHubBackend}" target="_blank">Back-End Code<i class="fab fa-github"></i></a>
+                    `
+                    : '<a class="btn btn-primary round-pill" href="${project.gitHub}" target="_blank">Source Code<i class="fab fa-github"></i></a>'}
+                    
                     <a class="btn btn-primary round-pill" href="${project.liveLink}" target="_blank">Website<i class="fas fa-external-link-alt"></i></a>
                 </div>
         </div>
