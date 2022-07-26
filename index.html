@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1175a7f98e.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc6OiIhAAAAAMEYXwG5OTQa_6gW7bRWqGz89yXw"></script>
 </head>
 <body>
     <div id="home"></div>
@@ -127,6 +128,7 @@
             <input class="form-control" type="text" name="name" placeholder="Name" required>
             <input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
             <textarea class="form-control" name="message" id="message" cols="30" rows="5" minlength="10" maxlength="100" spellcheck="false" placeholder="Your Message"required></textarea>
+            <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
             <button type="submit" class="btn btn-primary round-pill">Submit</button>
         </form>
     </section>
@@ -167,5 +169,13 @@
     </a>
     <script type="module" src="js/main.js"></script>
     <script src="js/portfolioItems.js"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lc6OiIhAAAAAMEYXwG5OTQa_6gW7bRWqGz89yXw', {action: 'contact'})
+            .then(function(token) {
+                document.getElementById('captchaResponse').value = token;
+            });
+        });
+    </script>
 </body>
 </html>
