@@ -1,29 +1,29 @@
 :root {
-    --bg: #fff;
-    --bg-panel: #fff;
-    --color-navbar: #012975;
-    --color-headings: #171a23;
-    --color-text-opacity: rgba(23, 26, 35, .7);
-    --color-text: #171a23;
-    --color-text-base: #171a23;
-    --border: #ced4da;
-    --theme-color: rgb(13, 63, 156);
+  --bg: rgb(248, 249, 250);
+  --bg-panel: rgb(248, 249, 250);
+  --color-navbar: #012975;
+  --color-headings: #171a23;
+  --color-text-opacity: rgba(23, 26, 35, 0.7);
+  --color-text: #171a23;
+  --color-text-base: #171a23;
+  --border: #ced4da;
+  --theme-color: rgb(13, 63, 156);
 }
 
-[data-theme="light"] .hero-bg {
-    background-image: url("../assets/images/hero-pattern.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+[data-theme='light'] .hero-bg {
+  background-image: url('../assets/images/hero-pattern.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-[data-theme="dark"] {
-    --bg: #171a23;
-    --bg-panel: #f1f1f1;
-    --color-navbar: rgb(13, 63, 156);
-    --color-headings: #fff;
-    --color-text-opacity: rgba(255,255,255,0.7);
-    --color-text: #fff;
-    --color-text-base: #161c2d;
-    --border: #ced4da;
+[data-theme='dark'] {
+  --bg: #171a23;
+  --bg-panel: #f1f1f1;
+  --color-navbar: rgb(13, 63, 156);
+  --color-headings: #fff;
+  --color-text-opacity: rgba(255, 255, 255, 0.7);
+  --color-text: #fff;
+  --color-text-base: #161c2d;
+  --border: #ced4da;
 }
