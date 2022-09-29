@@ -255,6 +255,7 @@
 .tech-skills {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-card .tech-container i,
@@ -577,5 +578,9 @@
 
 .footer-note {
   color: #fff;
+  text-align: center;
+}
+
+.consultLink {
   text-align: center;
 }
