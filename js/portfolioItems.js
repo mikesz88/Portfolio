@@ -136,8 +136,8 @@ const portfolioItems = [
     img: './assets/studentAPI.PNG',
     popUpDescription: '',
     gitHub: 'https://github.com/mikesz88/API_with_Real-DB',
-    liveLink: 'https://first-db-module-14.herokuapp.com/',
-    dataItem: 'backend',
+    liveLink: 'https://studentapi.cyclic.app/',
+    dataItem: 'node backend',
     dataOpen: 'studentAPI',
   },
   {
@@ -159,7 +159,19 @@ const portfolioItems = [
       'An API for everyone to use at their leisure. No Authorization!',
     gitHub: 'https://github.com/mikesz88/freeRandomAPI',
     liveLink: 'https://freerandomapi.cyclic.app/',
-    dataItem: 'backend',
+    dataItem: 'node backend',
     dataOpen: 'freeRandomAPI',
+  },
+  {
+    title: 'Serverless Functions',
+    tech: 'REACT, NETLIFY FUNCTIONS',
+    img: './assets/serverlessFunction.PNG',
+    popUpDescription:
+      'A small React app that uses Netflicy Functions to make it serverless with ConvertKit',
+    gitHub:
+      'https://github.com/mikesz88/subscriber_form_with_serverless_function',
+    liveLink: 'https://sanchez-serverless-function.netlify.app/',
+    dataItem: 'react',
+    dataOpen: 'serverlessFunctions',
   },
 ];
