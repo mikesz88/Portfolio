@@ -293,8 +293,10 @@
   color: #61dbfb;
 }
 
-.typescript-tech-skills {
+.svg-tech-skills {
   width: 50px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .project-card .btn-alt {
