@@ -94,7 +94,7 @@ const portfolioItems = [
     popUpDescription:
       'This project by far has been one of my best. One reason is the challenge of creating a portfolio from scratch with no expectations and all the possibilities at my disposal. The challenge gave me an opportunity to showcase my skills as a developer and also challenge myself to find new ways to implement JavaScript into my website. For example, the typing portion in the introduction was a new technique I learned in my research that shows my skills of using JavaScript effectively. Click the links below to see the source code, a README file that shows more information, and a link back to the website!',
     gitHub: 'https://github.com/mikesz88/Portfolio',
-    liveLink: 'https://michaelsanchez.page',
+    liveLink: 'https://techysanchez.com',
     dataItem: 'html css js',
     dataOpen: 'portfolio',
   },
