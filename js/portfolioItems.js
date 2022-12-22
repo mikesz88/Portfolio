@@ -174,4 +174,15 @@ const portfolioItems = [
     dataItem: 'react',
     dataOpen: 'serverlessFunctions',
   },
+  {
+    title: 'Alien Budgets (Capstone)',
+    tech: 'REACT, NODE, EXPRESS, MONGODB',
+    img: './assets/capstone.PNG',
+    popUpDescription: '',
+    gitHub: 'https://github.com/mikesz88/alien_budgets_frontend',
+    gitHubBackend: 'https://github.com/mikesz88/alien_budgets_backend',
+    liveLink: 'https://www.alienbudgets.com',
+    dataItem: 'react backend fullstack',
+    dataOpen: 'alienBudgets',
+  },
 ];
