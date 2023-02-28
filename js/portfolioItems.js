@@ -142,7 +142,7 @@ const portfolioItems = [
   },
   {
     title: 'Bookstagram',
-    tech: 'REACT, NODE, EXPRESS, MONGODB',
+    tech: 'REACT, NODE, EXPRESS, PRISMA, MYSQL',
     img: './assets/bookstagram.PNG',
     popUpDescription: '',
     gitHub: 'https://github.com/mikesz88/bookstagram-front-end',
