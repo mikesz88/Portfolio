@@ -1,15 +1,15 @@
 // Portfolio Card Object
 const portfolioItems = [
   {
-    title: 'MyTube HTML Only',
-    tech: 'HTML',
-    img: './assets/myTubeHTMLpic.PNG',
+    title: 'Wolf Brothers Website Revamp',
+    tech: 'HTML, CSS, JS',
+    img: './assets/wolfBrothers.png',
     popUpDescription:
-      'This project was built with HTML only. The premise was to create a website that would display videos without any CSS that would connect to nearly 20 other HTML files. The project isn’t responsive whatsoever. Overall, this project was not very difficult when I was creating it. The hardest part of the project for me was making sure all the links all worked with the correct syntax especially with GitHub. From there I was able to successfully redo the links to work as expected. Creating the layout was the easiest portion for me in the project. By not being able to use CSS yet, I effectively used the tables to my advantage. Click the links below to see the source code, a README file that shows the expectations of the project, and a live preview!',
-    gitHub: 'https://github.com/mikesz88/myTubeHTMLOnly',
-    liveLink: 'https://mikesz88.github.io/myTubeHTMLOnly/',
-    dataItem: 'html',
-    dataOpen: 'mytubeHTML',
+      "One of my initial forays into freelance work involved securing a contract that turned out to be a remarkable success. My adept utilization of HTML, CSS, and JavaScript led to a project that not only met but exceeded the client's expectations. The positive outcome of this endeavor resonated strongly with the clients, who were thoroughly impressed with the results. The appreciation garnered from this project was so significant that it paved the way for future opportunities in the realm of full-stack development. Buoyed by the satisfaction expressed by the clients, I committed to expanding my skillset to offer even more comprehensive and versatile solutions down the line.",
+    gitHub: 'https://github.com/mikesz88/WolfBrothersCleaning',
+    liveLink: 'https://wolfbrotherscleaning.com/',
+    dataItem: 'html css js',
+    dataOpen: 'wolfBrothers',
   },
   {
     title: 'MyTube with CSS',
