@@ -12,15 +12,15 @@ const portfolioItems = [
     dataOpen: 'wolfBrothers',
   },
   {
-    title: 'MyTube with CSS',
-    tech: 'HTML, CSS',
-    img: './assets/myTubeCSSpic.PNG',
+    title: 'Realtor Website',
+    tech: 'HTML, CSS JS REACT',
+    img: './assets/realtorWebsite.png',
     popUpDescription:
-      'The project was built with the work from MyTube HTML Only, but with basic CSS. The goal behind this project was to make a beautiful platform to display my videos like Youtube (but not to make it exactly). The project isn’t responsive whatsoever.  As I was in my early days of learning CSS, I will admit after rereading the code, I definitely see many opportunities for growth where I could have grouped many classes together or even simplify it more and use a lot less code. Another challenge was the need to create a design from scratch. I took an extra day longer on this project than I wanted to because it was difficult for me to come up with a design that would be easy for viewers to see. I believe I restarted at least three times before I settled on with what I have now. The easiest part of the project for me was the navigation sections. The setup without any knowledge of grid or flexbox and the use of hovering in CSS was easy for me to understand and implement. Click the links below to see the source code, a README file that shows the expectations of the project, and a live preview!',
-    gitHub: 'https://github.com/mikesz88/myTubeWithCSS',
-    liveLink: 'https://mikesz88.github.io/myTubeWithCSS/',
-    dataItem: 'html css',
-    dataOpen: 'mytubeCSS',
+      "Embarking on yet another freelance project, I delved into a new contract that yielded exceptional results. Employing my proficiency in HTML, CSS, and JavaScript, along with the addition of React, I crafted a solution that resonated profoundly with the client, who integrated it into their daily operations seamlessly. What set this project apart was the collaborative dimension it encompassed. I teamed up with another developer, combining our expertise not only to create the product but also to provide tutoring and guidance to the client. This collaborative effort not only solidified the client's satisfaction but also enriched my experience as I shared knowledge and fostered professional growth.",
+    gitHub: 'https://github.com/mikesz88/mmRealtor',
+    liveLink: 'https://www.hccrealtyllc.com/',
+    dataItem: 'html css js react',
+    dataOpen: 'mmRealtor',
   },
   {
     title: 'Responsive Website',
